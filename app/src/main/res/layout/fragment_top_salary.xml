@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.crazy_iter.checkarround.SearchFragments.TopSalaryFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchSalRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightPrimary"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/fab_margin"
+            android:paddingRight="@dimen/fab_margin"
+            android:paddingTop="@dimen/padding_items"
+            android:paddingBottom="@dimen/padding_items">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_items"
+                android:layout_marginRight="@dimen/margin_items">
+
+                <EditText
+                    android:id="@+id/lowSalary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Low"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_arrow_forward"
+                    android:paddingTop="@dimen/padding_items"
+                    android:paddingBottom="@dimen/padding_items"
+                    android:layout_marginTop="@dimen/padding_items"
+                    android:layout_marginBottom="@dimen/padding_items"/>
+
+                    <EditText
+                        android:id="@+id/highSalary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="High"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"/>
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/currencySpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

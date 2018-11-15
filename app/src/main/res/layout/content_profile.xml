@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.crazy_iter.checkarround.ProfileActivity"
+    tools:showIn="@layout/activity_profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_items">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_items">
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/showNumberLL"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/phoneNumberTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0951784957"
+                            android:visibility="gone"
+                            android:textSize="@dimen/title_text_size"
+                            android:textColor="@color/primaryText"
+                            android:textAlignment="center"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_light">
+
+                            <LinearLayout
+                                android:id="@+id/makeCallLL"
+                                android:clickable="true"
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="50dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/ic_call_dark"
+                                    android:layout_margin="@dimen/margin_items"
+                                    android:padding="10dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Call"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/title_tab_size"/>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:layout_marginTop="@dimen/padding_items"
+                                android:layout_marginBottom="@dimen/padding_items"/>
+
+                            <LinearLayout
+                                android:id="@+id/sendMessageLL"
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:clickable="true">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/ic_message"
+                                    android:layout_margin="@dimen/margin_items"
+                                    android:padding="10dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Message"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/title_tab_size"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/staredSpotsLL"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_star_dark"
+                            android:layout_margin="@dimen/padding_items"
+                            android:padding="10dp"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Stared spots"
+                                android:textSize="@dimen/title_tab_size"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <TextView
+                                android:text="5 Spots"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/subtitle_text_size"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/profileDetails"
+                        android:textSize="@dimen/subtitle_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sssssssssssssssssssssssssssss"/>
+
+                    <LinearLayout
+                        android:id="@+id/editProfileLL"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_edit"
+                            android:layout_margin="@dimen/padding_items"
+                            android:padding="10dp"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Edit your profile"
+                                android:textSize="@dimen/title_tab_size"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <TextView
+                                android:text="name, details ..."
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/subtitle_text_size"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/dividerColor"/>
+
+                    <LinearLayout
+                        android:id="@+id/yourSpotsLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="@dimen/padding_items"
+                            android:src="@drawable/ic_place"
+                            android:padding="10dp"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:text="Your Spots"
+                                android:textSize="@dimen/title_tab_size"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/yourSpotsNumberTV"
+                                android:text="5 spots"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/subtitle_text_size"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/arrowYouSpotsIV"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:visibility="gone"
+                            android:src="@drawable/ic_arrow_drop_up"
+                            android:layout_margin="@dimen/margin_items"
+                            android:padding="10dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/yourSpotsRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

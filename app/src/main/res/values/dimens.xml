@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="fab_main_margin1">20dp</dimen>
+    <dimen name="fab_main_margin2">90dp</dimen>
+    <dimen name="fab_main_margin3">160dp</dimen>
+
+    <dimen name="image_main_margin2">70dp</dimen>
+    <dimen name="image_main_margin3">120dp</dimen>
+    <dimen name="image_main_margin4">170dp</dimen>
+
+    <dimen name="main_fab_bottom">60dp</dimen>
+    <dimen name="start_padding">25dp</dimen>
+    <dimen name="margin_items">8dp</dimen>
+    <dimen name="padding_items">5dp</dimen>
+    <dimen name="margin_mini">3dp</dimen>
+    <dimen name="title_tab_size">20dp</dimen>
+    <dimen name="title_text_size">25dp</dimen>
+    <dimen name="subtitle_text_size">18dp</dimen>
+    <dimen name="padding_text">5dp</dimen>
+    <dimen name="sub_main_text">30dp</dimen>
+    <dimen name="main_text">40dp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="profile_image_dialog">80dp</dimen>
+    <dimen name="profile_small_image_padding">35dp</dimen>
+</resources>

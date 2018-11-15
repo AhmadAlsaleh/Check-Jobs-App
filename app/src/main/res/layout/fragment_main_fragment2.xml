@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.crazy_iter.checkarround.MainFragments.MainFragment2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_background"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteLight"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="@dimen/main_text"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/star_it"
+            android:textAllCaps="true"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/fab_margin"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:id="@+id/main0LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:background="@drawable/circle_main">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/create_your_starred_list_by_clicking_on_star_then_back_faster"
+                android:textAlignment="center"
+                android:textSize="@dimen/title_text_size"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/fab_margin" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="normal"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_star" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Star\nSpots"
+            android:textAlignment="center"
+            android:textSize="@dimen/main_text"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/starFAB"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            app:fabSize="normal"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_star" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

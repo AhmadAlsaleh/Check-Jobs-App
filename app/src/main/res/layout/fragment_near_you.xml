@@ -1,0 +1,75 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.crazy_iter.checkarround.SearchFragments.NearYouFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchNearRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/textsAndIcons">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightPrimary"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/fab_margin"
+            android:paddingRight="@dimen/fab_margin"
+            android:paddingTop="@dimen/padding_items"
+            android:paddingBottom="@dimen/padding_items">
+
+            <Spinner
+                android:visibility="gone"
+                android:id="@+id/spinnerCities"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/padding_items"/>
+
+            <Spinner
+                android:visibility="gone"
+                android:id="@+id/spinnerAreas"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/padding_items"/>
+
+            <SeekBar
+                android:id="@+id/nearPlacesSeekBar"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="9"
+                android:progress="3" />
+
+            <TextView
+                android:id="@+id/meterNum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="500 m"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/subtitle_text_size"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

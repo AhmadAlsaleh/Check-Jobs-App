@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.crazy_iter.checkarround.JobMapActivity">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/jobMapView"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/layersIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_layers"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/padding_items"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@drawable/circle_icon_background"/>
+
+    <RelativeLayout
+        android:id="@+id/hideMapRL"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccentLight2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/map_details_background"
+            android:layout_marginTop="30dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/descriptionTVMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textSize="@dimen/subtitle_text_size"
+                        android:textColor="@color/primaryText"
+                        android:padding="@dimen/padding_items"/>
+
+                </ScrollView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_items"
+                android:layout_marginRight="@dimen/padding_items">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/margin_items"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_time"
+                        android:layout_margin="@dimen/margin_items"/>
+                    <TextView
+                        android:id="@+id/hoursTVMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8 AM"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/dividerColor"
+                    android:layout_marginTop="@dimen/margin_items"
+                    android:layout_marginBottom="@dimen/margin_items"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/margin_items"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_date"
+                        android:layout_margin="@dimen/margin_items"/>
+
+                    <TextView
+                        android:id="@+id/daysTVMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="7 day"
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/dividerColor"/>
+
+                <TextView
+                    android:id="@+id/salaryTVMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10,000 - 15,000 S.P"
+                    android:textAlignment="center"
+                    android:textColor="@color/fav_star"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_margin="@dimen/padding_items"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/dividerColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/showNumberLL"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_items">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/phoneNumberTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0951784957"
+                    android:textSize="@dimen/title_text_size"
+                    android:textColor="@color/primaryText"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_light">
+
+                    <LinearLayout
+                        android:id="@+id/makeCallLL"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_call_dark"
+                            android:layout_margin="@dimen/margin_items"
+                            android:padding="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Call"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/title_tab_size"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorAccent"
+                        android:layout_marginTop="@dimen/padding_items"
+                        android:layout_marginBottom="@dimen/padding_items"/>
+
+                    <LinearLayout
+                        android:id="@+id/sendMessageLL"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_message"
+                            android:layout_margin="@dimen/margin_items"
+                            android:padding="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Message"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/title_tab_size"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/moreFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_more" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/directionsFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_directions" />
+
+</RelativeLayout>

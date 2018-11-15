@@ -1,0 +1,237 @@
+<resources>
+
+    <string name="facebook_app_id">1503959603043687</string>
+    <string name="fb_login_protocol_scheme">fb1503959603043687</string>
+
+    <string name="app_name">Check Jobs</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="change_password">Change password</string>
+    <string name="terms_of_use">Terms of use</string>
+    <string name="send_feedback">Send feedback</string>
+    <string name="like_us_on_facebook">Like us on facebook</string>
+    <string name="follow_us_on_twitter">Follow us on twitter</string>
+    <string name="about">About</string>
+    <string name="logout">Sign out</string>
+    <string name="field_is_required">Field is required</string>
+    <string name="at_least_6">Password must contain 6 characters at least</string>
+    <string name="no_match_passwords">No match passwords</string>
+    <string name="type_you_feedback_below">Type you feedback below ..</string>
+    <string name="no_mail_app">No mail app</string>
+    <string name="type_your_feedback">Type you feedback</string>
+    <string name="forget_password">Forget password?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="manage_my_places">Manage My Places</string>
+    <string name="change_your_info">Change Your Info</string>
+    <string name="add_spot">Add Spot</string>
+    <string name="title">Title</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="description">Description</string>
+    <string name="not_important">Not important</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="gender">Gender</string>
+    <string name="high_salary">High Salary</string>
+    <string name="low_salary">Low Salary</string>
+    <string name="salary">Salary</string>
+    <string name="days">Days</string>
+    <string name="p_m">P.M</string>
+    <string name="a_m">A.M</string>
+    <string name="date_amp_time"><![CDATA[Date & Time]]></string>
+    <string name="phone">Phone</string>
+    <string name="select_a_place">Select a place</string>
+    <string name="all">All</string>
+    <string name="skip">Skip</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="facebook">Facebook</string>
+    <string name="by_sign_in_you_accept_our">By sign in you accept our</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="name">Name</string>
+    <string name="normal_user">Normal User</string>
+    <string name="work_owner">Work Owner</string>
+    <string name="by_sign_up_you_accept_our">By sign up you accept our</string>
+    <string name="about_text">Using Check Jobs you can:\n \nFind full or part time job easily using interactive map when you walk\nCreate your starred list by clicking on star then back faster\nAdd your pins to publish jobs then wait new staffs</string>
+    <string name="developed_by_crazy_iter">Developed by: Crazy ITer \n
+        Hosting on SmartLife-Solutions
+    </string>
+    <string name="sure_to_delete_place">Are you sure to delete this place?</string>
+    <string name="yes">Yes</string>
+    <string name="deleted">Deleted</string>
+    <string name="try_again">Try again :(</string>
+    <string name="sign_in_please">Sign in please then try again</string>
+    <string name="more_details">More Details</string>
+    <string name="less_details">Less Details</string>
+    <string name="gender_show">Gender:</string>
+    <string name="phone_not_availible">Phone not available</string>
+    <string name="sure_to_delete_spot">Are you sure to delete this spot?</string>
+    <string name="no">No</string>
+    <string name="send_by">Send by ...</string>
+    <string name="drag_on_map">Drag on Map please</string>
+    <string name="added">Added</string>
+    <string name="calling">Calling ..</string>
+    <string name="copied">Copied</string>
+    <string name="password_updated">Password Updated</string>
+    <string name="check_your_connection">Check Your Connection</string>
+    <string name="updated">Updated</string>
+    <string name="sending">Sending ...</string>
+    <string name="feedback_sent">Feedback sent</string>
+    <string name="hours_show">hours</string>
+    <string name="pm">PM</string>
+    <string name="am">AM</string>
+    <string name="edit_spot">Edit Spot</string>
+    <string name="uploaded">Uploaded</string>
+    <string name="incorrect_phone_number">Incorrect Phone Number</string>
+    <string name="check_salary_values">Check Salary Values</string>
+    <string name="sure_to_cancel">Are you sure to cancel?</string>
+    <string name="upgrade_account">Upgrade to Work Owner account?</string>
+    <string name="filtered">Filtered</string>
+    <string name="starred">Starred</string>
+    <string name="my_places">My Places</string>
+    <string name="sure_to_exit">Are you sure to Exit?</string>
+    <string name="upgrade_your_account">Upgrade your profile</string>
+    <string name="loading">Loading ...</string>
+    <string name="find_directions">Find Directions</string>
+    <string name="select_a_olace_to_find_road">Select a place to find road</string>
+    <string name="done">Done</string>
+    <string name="permission_needed">Permission needed to continue</string>
+    <string name="ok">OK</string>
+    <string name="settings">Settings</string>
+    <string name="canceled">Canceled</string>
+    <string name="welcome">Welcome :)</string>
+    <string name="has_not_signed_up">Hasn\'t Signed up</string>
+    <string name="incorrect_email">Incorrect email address</string>
+    <string name="password_validation">Password must contain 6 characters at least</string>
+    <string name="welcome_back">Welcome Back :)</string>
+    <string name="already_signed_up">Already signed up</string>
+    <string name="place_title">Place title</string>
+    <string name="copy">Copy</string>
+    <string name="add">Add</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="new_password_again">New password again</string>
+    <string name="save">Save</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="new_name">New name</string>
+    <string name="new_phone">New phone</string>
+    <string name="new_details">New details</string>
+    <string name="search">Search</string>
+    <string name="place">Place</string>
+    <string name="nearest">Nearest</string>
+    <string name="whole">Whole</string>
+    <string name="hours">Hours</string>
+    <string name="manage_your_places">Manage your places</string>
+    <string name="your_feedback">Your feedback</string>
+    <string name="find_it">find it</string>
+    <string name="find_full_or_part_time_job_easily_using_interactive_map_when_you_walk">Find full or part time job easily using interactive map when you walk</string>
+    <string name="star_it">star it</string>
+    <string name="create_your_starred_list_by_clicking_on_star_then_back_faster">Create your starred list by clicking on star then back faster</string>
+    <string name="pin_it">pin it</string>
+    <string name="add_your_pins_to_publish_jobs_then_wait_new_staffs">Add your pins to publish jobs then wait new staffs</string>
+    <string name="do_it">do it</string>
+    <string name="sign_in_easily_using_your_facebook_account_nor_sign_up">Sign in easily using your facebook account or Sign up</string>
+    <string name="position">position</string>
+    <string name="company">Company</string>
+    <string name="call">Call</string>
+    <string name="message">Message</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="search_word">Search Word</string>
+
+</resources>

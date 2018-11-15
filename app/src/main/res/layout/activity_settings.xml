@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.crazy_iter.checkarround.SettingsActivity"
+    android:layout_marginLeft="@dimen/fab_margin"
+    android:layout_marginRight="@dimen/fab_margin">
+
+    <TextView
+        android:id="@+id/changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_password"
+        android:textSize="@dimen/subtitle_text_size"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:onClick="changePassword"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividerColor" />
+
+    <TextView
+        android:id="@+id/changeInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_your_info"
+        android:textSize="@dimen/subtitle_text_size"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:onClick="changePassword"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividerColor" />
+
+    <TextView
+        android:id="@+id/manageMyPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manage_my_places"
+        android:textSize="@dimen/subtitle_text_size"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:onClick="changePassword"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividerColor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_of_use"
+        android:textSize="@dimen/subtitle_text_size"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:onClick="toTermsOfUse"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividerColor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_feedback"
+        android:textSize="@dimen/subtitle_text_size"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:onClick="toSendFeedback"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividerColor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/like_us_on_facebook"
+        android:textSize="@dimen/subtitle_text_size"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:onClick="toLikeOnFacebook"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividerColor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/follow_us_on_twitter"
+        android:textSize="@dimen/subtitle_text_size"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:onClick="toFollowTwitter"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividerColor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:textSize="@dimen/subtitle_text_size"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:onClick="toAbout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividerColor" />
+
+    <TextView
+        android:id="@+id/logoutTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textSize="@dimen/subtitle_text_size"
+        android:padding="10dp"
+        android:gravity="center_vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dividerColor" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileIVDialog"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:padding="@dimen/profile_image_dialog"
+        android:layout_margin="@dimen/padding_items"
+        android:src="@drawable/ic_camera"
+        android:background="@drawable/profile_image_circle"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorAccent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:padding="@dimen/padding_items">
+
+        <TextView
+            android:id="@+id/changeImageDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Change"
+            android:textAlignment="center"
+            android:textSize="@dimen/subtitle_text_size"
+            android:textColor="@color/colorAccent"/>
+
+        <RelativeLayout
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="@dimen/margin_items"
+            android:layout_marginBottom="@dimen/margin_items" />
+
+        <TextView
+            android:id="@+id/removeImageDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Remove"
+            android:textAlignment="center"
+            android:textSize="@dimen/subtitle_text_size"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveProfileImageDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:textSize="@dimen/subtitle_text_size"/>
+
+</LinearLayout>
