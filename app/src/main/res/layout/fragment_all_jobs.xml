@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.crazy_iter.checkarround.SearchFragments.AllJobsFragment">
+    tools:context="com.crazy_iter.checkjobs.SearchFragments.AllJobsFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/searchAllRV"

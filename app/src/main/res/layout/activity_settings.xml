@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.crazy_iter.checkarround.SettingsActivity"
+    tools:context="com.crazy_iter.checkjobs.SettingsActivity"
     android:layout_marginLeft="@dimen/fab_margin"
     android:layout_marginRight="@dimen/fab_margin">
 
